@@ -63,7 +63,7 @@ public class Course
 		        }
 		        for (int i=0;i<courseInstructors.size();i++)
 			    {
-		        	myPrintInfoWriter.write(courseInstructors.get(i) + "\r\n");
+		        	myPrintInfoWriter.write(courseInstructors.get(i).printToString() + "\r\n");
 			    }
 			  myPrintInfoWriter.close();
 			  System.out.println("File created successfully: " + myPrintInfoFile.getName());

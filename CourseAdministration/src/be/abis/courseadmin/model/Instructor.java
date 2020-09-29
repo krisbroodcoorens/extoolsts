@@ -25,7 +25,12 @@ public class Instructor
 		//Empty constructor method
 	}
 
-	public String getFirstName() 
+	public String printToString ()  
+	{
+		return firstName+ " " +lastName+ " - " +age+ " - " +startSalary  ;
+	}
+	
+	public String getFirstName()  
 	{
 		return firstName;
 	}
@@ -99,6 +104,31 @@ public class Instructor
 		try 
 		{
 			FileWriter mySalaryHistoryWriter = new FileWriter("salaryHistory-" +firstName+".txt");
+			while (increasedAge <= currentAge && (increasedAge - startAge) <= 35 )
+			{
+				mySalaryHistoryWriter.write("Salary of " + firstName + " at " + increasedAge + " is " + increasedSalary + "\n");
+				increasedAge += 5;
+				increasedSalary *= 1.03;
+			}
+			mySalaryHistoryWriter.write("Maximum Salary reached for " +firstName);
+			System.out.println("Successfully create file salaryHistory-" +firstName+ ".txt");
+			mySalaryHistoryWriter.close();		
+		}
+		catch(IOException expSalaryHistory) 
+		{
+			System.out.println("Error writing file salaryHistory.txt");			
+		}	  
+	} 
+	
+	public void printSalaryHistory (String fileName) 
+	{
+		int increasedAge = startAge;
+		double increasedSalary = startSalary;
+		int currentAge = age;
+		
+		try 
+		{
+			FileWriter mySalaryHistoryWriter = new FileWriter(fileName+ ".txt");
 			while (increasedAge <= currentAge && (increasedAge - startAge) <= 35 )
 			{
 				mySalaryHistoryWriter.write("Salary of " + firstName + " at " + increasedAge + " is " + increasedSalary + "\n");

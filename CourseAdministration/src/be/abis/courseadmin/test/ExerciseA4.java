@@ -12,17 +12,20 @@ public class ExerciseA4
 	{
 		//Declare "myFirstInstructor"
 		Instructor myFirstInstructor = new Instructor("Patrick", "Van Overveldt", 52, 27, 2500.0);
-		myFirstInstructor.printSalaryHistory();		
+		myFirstInstructor.printSalaryHistory();	
+		myFirstInstructor.printSalaryHistory(myFirstInstructor.getFirstName()+ " " + myFirstInstructor.getLastName());	
 				
 		//Declare "mySecondInstructor"
 		Instructor mySecondInstructor = new Instructor("Kris", "Broodcoorens", 37, 21, 1290.0);
 		//Calculate & print salary history for "mySecondInstructor in separate file"
 		mySecondInstructor.printSalaryHistory();
+		mySecondInstructor.printSalaryHistory(mySecondInstructor.getFirstName()+ " " + mySecondInstructor.getLastName());
 		
 		//Declare "myThirdInstructor"
 		Instructor myThirdInstructor = new Instructor("Tom", "Blomme", 45, 23, 2000.0);
 		//Calculate & print salary history for "myThirdInstructor in separate file"
 		myThirdInstructor.printSalaryHistory();
+		myThirdInstructor.printSalaryHistory(myThirdInstructor.getFirstName()+ " " + myThirdInstructor.getLastName());
 		
 		//Declare "firstCourse" 
 		Course myFirstCourse = new Course("Java", 18, 750.0, false);
@@ -30,12 +33,11 @@ public class ExerciseA4
 		myFirstCourse.addInstructor(mySecondInstructor);
 		myFirstCourse.addInstructor(myThirdInstructor);
 		myFirstCourse.printInfo();
-		
+				
 		//Declare "mySecondCourse"
 		Course mySecondCourse = new Course("ReactJS", 20, 550.0, false);
 		mySecondCourse.addInstructor(myFirstInstructor);
 		mySecondCourse.addInstructor(mySecondInstructor);
-		mySecondCourse.addInstructor(myThirdInstructor);
 		mySecondCourse.printInfo();
 		
 		//Declare "myThirsCourse"
