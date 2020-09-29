@@ -4,16 +4,8 @@ public class Company
 {
 	//Declaration of variables
 	String name;
-	Person person; 
 	Address address; 
 
-	//Constructor
-	public Company (String name, Person person, Address address) {
-		this.name = name;
-		this.person = person;		
-		this.address = address;
-	}
-	
 	//Constructor
 	public Company (String name, Address address) {
 		this.name = name;	
@@ -30,14 +22,6 @@ public class Company
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public Person getPerson() {
-		return person;
-	}
-
-	public void setPerson(Person person) {
-		this.person = person;
 	}
 
 	public Address getAddress() {
