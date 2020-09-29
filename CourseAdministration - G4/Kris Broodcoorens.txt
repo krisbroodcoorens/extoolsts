@@ -1,0 +1,5 @@
+Salary of Kris at 21 is 1290.0
+Salary of Kris at 26 is 1328.7
+Salary of Kris at 31 is 1368.5610000000001
+Salary of Kris at 36 is 1409.6178300000001
+Maximum Salary reached for Kris
