@@ -1,0 +1,8 @@
+The course Java takes 18 days for 750.0 per day and prior knowledge is false.
+The total price of this course is 16335.0 euro.
+The course is labeled as Ok
+This course has 3 instructors.
+The instructors for this course are: 
+be.abis.courseadmin.model.Instructor@7d6f77cc
+be.abis.courseadmin.model.Instructor@5aaa6d82
+be.abis.courseadmin.model.Instructor@73a28541
