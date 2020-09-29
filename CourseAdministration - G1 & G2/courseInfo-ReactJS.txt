@@ -1,0 +1,7 @@
+The course ReactJS takes 20 days for 550.0 per day and prior knowledge is false.
+The total price of this course is 13310.0 euro.
+The course is labeled as Ok
+This course has 2 instructors.
+The instructors for this course are: 
+Patrick Van Overveldt - 52 - 2500.0
+Kris Broodcoorens - 37 - 1290.0
